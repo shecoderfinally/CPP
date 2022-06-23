@@ -2,44 +2,19 @@
 #include <cmath>
 
 using namespace std;
-
-//defining unparameterized function
-void sayHello()
+int cubing(int num)
 {
-    cout << "Hello User" << endl;
+    return pow(num,3);
+    //unreachable statement
+    cout << "Hello";
 }
-
-//defining parameterized function with single attribute
-void sayHi(string name)
-{
-    cout << "Hi " << name << endl;
-}
-
-//declaring parameterized function with multiple attributes
-
-void sayHey(string name,int age);
 int main()
 {
-    string name;
-    cout << "Enter your name: " << endl;
-    cin >> name;
-
-    cout << "Top" << endl;
-
-    //calling the sayHello function
-    sayHello();
-
-    //calling the sayHi function
-    sayHi(name);
-
-    //calling the sayHey function
-    sayHey("Mike",28);
-    cout << "Bottom" << endl;
+    int num;
+    cout << " Enter number: " << endl;
+    cin >> num;
+    cout<< "Given number : " << num << endl;
+    cout << "The cube of the given number is " << cubing(num);
     return 0;
 }
 
-//parameterized function with multiple attributes
-void sayHey(string name,int age)
-{
-    cout << "Hi " << name << " you are " << age << " years old " << endl;
-}
