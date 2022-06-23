@@ -3,24 +3,21 @@
 
 using namespace std;
 
-// unparameterized function
+//defining unparameterized function
 void sayHello()
 {
     cout << "Hello User" << endl;
 }
 
-//parameterized function with single attribute
+//defining parameterized function with single attribute
 void sayHi(string name)
 {
     cout << "Hi " << name << endl;
 }
 
-//parameterized function with multiple attributes
-void sayHey(string name,int age)
-{
-    cout << "Hi " << name << " you are " << age << " years old " << endl;
-}
+//declaring parameterized function with multiple attributes
 
+void sayHey(string name,int age);
 int main()
 {
     string name;
@@ -39,4 +36,10 @@ int main()
     sayHey("Mike",28);
     cout << "Bottom" << endl;
     return 0;
+}
+
+//parameterized function with multiple attributes
+void sayHey(string name,int age)
+{
+    cout << "Hi " << name << " you are " << age << " years old " << endl;
 }
